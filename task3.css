@@ -1,0 +1,89 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background: #002244;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+.tyre-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.tyre-gallery div {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.tyre-gallery div:hover {
+  transform: scale(1.1);
+}
+.tyre-gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+#tyre-details {
+  padding: 1rem 2rem;
+  background: #e0f7fa;
+  margin: 2rem;
+  border-radius: 8px;
+}
+.variant-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.variant-img {
+  width: 120px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.variant-img:hover {
+  transform: scale(1.05);
+}
+.quiz {
+  background: #fff8e1;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8px;
+}
+.quiz p {
+  margin-top: 1rem;
+}
+.quiz button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.quiz button:hover {
+  background: #004d40;
+}
+footer {
+  background: #002244;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .tyre-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Sai Tyres Apollo – Task 3</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+  <header>
+    <h1>Sri Sai Tyres Apollo</h1>
+    <p>Tandur, VKB Dist, Telangana – 501141</p>
+  </header>
+
+  <main class="container">
+    <section id="gallery">
+      <h2>Explore Our Tyres</h2>
+      <div class="tyre-gallery">
+        <div class="tyre-card" onclick="showDetails('Car Tyres', 'Reliable and long-lasting car tyres perfect for all terrains.')">
+          <img src="bi.jpg" alt="Car Tyres">
+          <h3>Car Tyres</h3>
+        </div>
+        <div class="tyre-card" onclick="showDetails('Lorry Tyres', 'Heavy‑duty tyres built for tough roads and long hauls.')">
+          <img src="oo.jpg" alt="Lorry Tyres">
+          <h3>Lorry Tyres</h3>
+        </div>
+        <div class="tyre-card" onclick="showDetails('Bike Tyres', 'High‑performance tyres for all kinds of bikes.')">
+          <img src="bii.jpg" alt="Bike Tyres">
+          <h3>Bike Tyres</h3>
+        </div>
+      </div>
+
+      <div id="tyre-details" class="tyre-details hidden">
+        <h2 id="detail-title"></h2>
+        <p id="detail-description"></p>
+        <button onclick="hideDetails()">Close</button>
+      </div>
+    </section>
+
+    <section id="quiz">
+      <h2>Quick Tyre Quiz</h2>
+      <div id="quiz-form">
+        <div class="question">
+          <p>1. Which tyre type is best for city and highway driving?</p>
+          <label><input type="radio" name="q1" value="Car Tyres"> Car Tyres</label><br>
+          <label><input type="radio" name="q1" value="Lorry Tyres"> Lorry Tyres</label><br>
+          <label><input type="radio" name="q1" value="Bike Tyres"> Bike Tyres</label>
+        </div>
+        <div class="question">
+          <p>2. Which tyre type is designed for heavy haulage?</p>
+          <label><input type="radio" name="q2" value="Car Tyres"> Car Tyres</label><br>
+          <label><input type="radio" name="q2" value="Lorry Tyres"> Lorry Tyres</label><br>
+          <label><input type="radio" name="q2" value="Bike Tyres"> Bike Tyres</label>
+        </div>
+        <button onclick="checkQuiz()">Submit Quiz</button>
+      </div>
+      <div id="quiz-result" class="quiz-result hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sri Sai Tyres Apollo. All Rights Reserved.</p>
+  </footer>
+
+  <script src="task3.js"></script>
+</body>
+</html>
