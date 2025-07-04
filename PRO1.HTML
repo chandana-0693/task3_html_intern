@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandana's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+  <script defer src="script1.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="mode-toggle">
+    <label>
+      <input type="checkbox" id="darkModeToggle"> 🌙 Toggle Mode
+    </label>
+  </div>
+
+  <header id="home">
+    <div class="portfolio-title slide-down">My Portfolio</div>
+    <div class="hero-text">
+      <h1 class="scroll-left">B. Chandana</h1>
+    <p class="fade-in">CMR Engineering College, Hyderabad</p>
+        <p class="subtitle fade-in">B.Tech 2nd Year | CSE (AIML) | GPA: 9.2</p>
+        <p class="fade-in">Aspiring Full Stack Developer</p>
+        <h2>Welcome to my portfolio! <br>Explore my skills, projects, and achievements.</h2>
+    </div>
+  </header>
+<br>
+  <img class="fade-in-image" loading="lazy" onload="this.classList.add('loaded')" src="download.jpg" alt="Profile Image" />
+
+ 
+
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="section hidden">
+      <h2>About Me</h2>
+      <ul>
+        <li>🎓 College: CMR Engineering College, Hyderabad</li>
+        <li>📘 Branch: CSE (Artificial Intelligence & Machine Learning)</li>
+        <li>📅 Year: 2nd Year</li>
+        <li>📛 Full Name: B. Chandana</li>
+        <li>🎂 Date of Birth: 13 January 2006</li>
+        <li>🏫 10th School: Krishnaveni Concept School - 10 GPA</li>
+        <li>🏫 Intermediate: Sri Chaitanya Mahila Kalashala - 9.37 GPA</li>
+        <li>📞 Phone: +91-7989491568</li>
+        <li>📧 Email: tchandana372@gmail.com</li>
+      </ul>
+      <a href="resume.pdf" download class="btn">Download Resume (PDF)</a>
+    </section>
+
+    <section id="skills" class="section hidden">
+      <h2>Skills 💻</h2>
+      <ul class="skills-grid">
+        <li>🌐 HTML, CSS, JavaScript</li>
+        <li>🛠️ Bootstrap, PHP, Python</li>
+        <li>🧠 Java, RDBMS, MySQL, PostgreSQL</li>
+        <li>🧰 Git, VS Code</li>
+        <li>🎯 Communication, Teamwork</li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="section hidden">
+      <h2>Certifications & Achievements 📜</h2>
+      <ul>
+        <li>🎓 Crash Course on Python - Coursera (Google), April 2024</li>
+        <li>🔐 Foundations of Cybersecurity - Coursera (Google), May 2024</li>
+        <li>🐍 Python 3.4.3 Training - IIT Bombay, October 2024</li>
+        <li>☕ Java, RDBMS, C - IIT Bombay, 2023–2024</li>
+        <li>📘 CIT Certificate - Certified Information Technology, 2024–2025</li>
+        <li>📊 Google Analytics Badge - Google</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section hidden">
+      <h2>Projects 💼</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>To-Do App</h3>
+          <p>Tech: HTML, CSS, JS</p>
+          <p>Manage tasks efficiently using local storage.</p>
+          <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Product Listing Page</h3>
+          <p>Tech: HTML, CSS, JS</p>
+          <p>Interactive filtering and sorting of product data.</p>
+          <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h3>Tyre Shop Website</h3>
+          <p>Tech: HTML, CSS, JS</p>
+          <p>Dynamic tyre gallery with click-to-view details and animations.</p>
+          <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section hidden">
+      <h2>Contact 📫</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p>Connect with me:</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/bondhili-chandana-490702300" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/chandana-0693" target="_blank">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chandana's Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
